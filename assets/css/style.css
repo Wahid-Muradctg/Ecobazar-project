@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --font-family: "Poppins", sans-serif;
+    --second-family: "Segoe Script", sans-serif;
+    --third-family: "Dancing Script", sans-serif;
+    --gren-gray-scale-900: #002603;
+    --gren-gray-scale-800: #173b1a;
+    --gren-gray-scale-700: #2b572e;
+    --gren-gray-scale-600: #406b42;
+    --gren-gray-scale-500: #618062;
+    --gren-gray-scale-400: #7a997c;
+    --gren-gray-scale-300: #96b297;
+    --gren-gray-scale-200: #b4ccb4;
+    --gren-gray-scale-100: #dae5da;
+    --gren-gray-scale-50: #edf2ee;
+    --gray-scale-gray-900: #1a1a1a;
+    --gray-scale-gray-800: #333;
+    --gray-scale-gray-700: #4d4d4d;
+    --gray-scale-gray-600: #666;
+    --gray-scale-gray-500: #808080;
+    --gray-scale-gray-400: #999;
+    --gray-scale-gray-300: #b3b3b3;
+    --gray-scale-gray-200: #ccc;
+    --gray-scale-gray-100: #e6e6e6;
+    --gray-scale-gray-50: #f2f2f2;
+    --gray-scale-white: #fff;
+    --branding-success-bright: #84d187;
+    --branding-success: #00b207;
+    --branding-success-dark: #2c742f;
+    --branding-warning: #ff8a00;
+    --branding-error: #ea4b48;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+iconify-icon {
+    vertical-align: middle;
+}
+
+/* common css end */
+
+/* first menu start */
+#firstMenu {
+    padding: 12px 0;
+    box-shadow: 0 1px 0 0 #e5e5e5;
+    background: var(--gray-scale-gray-800);
+    color: var(--gray-scale-gray-300);
+
+}
+
+#firstMenu p {
+    font-weight: 400;
+    font-size: 12px;
+    display: inline-flex;
+}
+
+#firstMenu p span {
+    font-size: 17px;
+    margin-right: 8px;
+    line-height: 0;
+}
+
+#firstMenu select {
+    background-color: inherit;
+    color: inherit;
+    border: none;
+    margin-right: 20px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 130%;
+    text-align: center;
+
+}
+
+#firstMenu select option {
+    background: var(--gray-scale-gray-100);
+    border: none;
+    font-family: var(--font-family);
+    color: var(--branding-success-dark);
+}
+
+#firstMenu a {
+    margin-left: 8px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 130%;
+    padding-left: 20px;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        height: 15px;
+        top: 0;
+        left: 0;
+
+
+    }
+}
+
+/* first menu end */
+
+/* second menu start */
+#secondMenu {
+    padding: 24px 0;
+
+}
+
+#secondMenu form {
+    position: relative;
+}
+
+#secondMenu form .search-icon {
+    position: absolute;
+    left: 116px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#secondMenu .serchBar {
+    border: 1px solid var(--gray-scale-gray-100);
+    border-radius: 6px 0 0 6px;
+    padding: 12px 18px 12px 44px;
+    width: 400px;
+    height: 45px;
+    margin-left: 100px;
+
+}
+
+#secondMenu .serchBar::placeholder {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 140%;
+    color: var(--gray-scale-gray-500);
+}
+
+#secondMenu .serchBtn {
+
+    border-radius: 0 6px 6px 0;
+    padding: 14px 24px;
+    width: 98px;
+    height: 45px;
+    background: var(--branding-success);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 120%;
+    color: var(--gray-scale-white);
+    border: none;
+}
+
+li.d-flex a {
+    position: relative;
+    margin-left: 20px;
+}
+
+li.d-flex a::before {
+    content: "";
+    position: absolute;
+    border: 1px solid var(--gray-scale-gray-200);
+    height: 24px;
+    left: -10px;
+    top: 12px;
+}
+
+li.d-flex {
+    position: relative;
+}
+
+li.d-flex .counter {
+    position: absolute;
+    top: 10px;
+    left: 40px;
+    border: 1px solid var(--gray-scale-white);
+    border-radius: 16px;
+    width: 18px;
+    height: 18px;
+    background-color: var(--branding-success-dark);
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 18px;
+    text-align: center;
+    color: var(--gray-scale-white);
+    z-index: 1;
+}
+
+#secondMenu .cart-text {
+    margin-top: 8px;
+
+}
+
+#secondMenu .cart-text p {
+
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 120%;
+    color: var(--gray-scale-gray-700);
+    margin-bottom: 5px;
+}
+
+#secondMenu .cart-text h3 {
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    color: var(--gray-scale-gray-900);
+}
+
+/* second menu end here */
+
+/* third menu start */
+#thirdMenulg {
+
+    background: var(--gray-scale-gray-50);
+}
+
+#thirdMenulg ul.d-flex {
+    gap: 30px;
+}
+
+#thirdMenulg ul.d-flex button {
+    padding: 16px 24px;
+    width: 215px;
+    height: 56px;
+    background: var(--branding-success);
+    border: none;
+    gap: 5px;
+}
+
+#thirdMenulg ul.d-flex a {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--gray-scale-gray-500);
+}
+
+#thirdMenulg ul.d-flex a.active,
+#thirdMenulg ul.d-flex li:hover>a {
+    color: var(--branding-success);
+}
+
+iconify-icon[icon="mingcute:phone-call-line"] {
+    margin-right: 10px;
+}
+
+#thirdMenulg .callLog {
+    padding-left: 28px;
+}
+
+/* submenu start */
+#thirdMenulg li {
+    position: relative;
+}
+
+#thirdMenulg .subMenu {
+    position: absolute;
+    background: var(--gray-scale-gray-50);
+    border: 1px solid var(--gray-scale-gray-400);
+    min-width: fit-content;
+    width: 100%;
+    display: none;
+}
+
+#thirdMenulg .subMenu li a {
+    padding: 12px 20px;
+    display: block;
+}
+
+/* sub menu end */
+
+/* cart off canvas start */
+.cartOffcanvas {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100vh;
+    inset: 0;
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.6s
+
+}
+.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.cartOffcanvas .cartContant {
+    height: 100vh;
+    width: 30vw;
+    background: #fff;
+transform: translateX(100vw);
+
+}
+.cartOffcanvas.active .cartContant{
+    transform: translateX(70vw);
+    transition: transform 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.cartContant .cartHeader {
+    display: flex;
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    justify-content: space-between;
+}
+
+.cartContant .cartHeader p {
+    color: var(--gray-scale-gray-800);
+    font-size: 25px;
+    font-family: var(--font-family);
+}
+
+.cartContant .cartHeader button {
+    border: none;
+    background: transparent;
+    font-size: 20px;
+}
+
+.cartContant .cartDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    gap: 30px;
+}
+
+iconify-icon[icon="pepicons-pop:cart-off"] {
+    opacity: 0.2;
+}
+.cartContant .cartDetails p{
+font-size: 30px;
+}
+.cartContant .cartDetails button{
+    border: none;
+    background-color: var(--branding-success);
+    width: 250px;
+    height: 60px;
+    font-size: 18px;
+    border-radius: 10px;
+}
